@@ -37,6 +37,10 @@ class App extends Component {
             <h2>Successful Signed In!</h2>
             <h1>Welcome {firebase.auth().currentUser.displayName}</h1>
             <img  alt="profile picture" src={firebase.auth().currentUser.photoURL} width="300" height="300" />
+            <div className="container clearfix">
+              <OnlineList loadChat={(user) => loadChat(user)} />
+              <Chat user={user} />
+            </div>
           </span>
         ) : (
           <StyledFirebaseAuth
