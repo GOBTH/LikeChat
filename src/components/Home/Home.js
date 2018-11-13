@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../../css/App.css'
+import '../../App.css'
 import Navbar from '../Navbar'
 
 let updateLastOnline = false;
